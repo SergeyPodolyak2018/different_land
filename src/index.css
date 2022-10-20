@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal; display: block;
+-webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+Html{
+  width:100%;
+}
+body{width: 100%}
+
+#root{
+  width: 100%;
+}

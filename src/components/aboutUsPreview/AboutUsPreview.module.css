@@ -1,0 +1,124 @@
+.about_wrapper{
+    position: relative;
+    padding-top: 38%;
+
+}
+.about_img_wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 662px;
+    z-index: 10;
+
+}
+.about_image{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+}
+.text_wrapper{
+    position: relative;
+    z-index: 20;
+    margin: 0 auto;
+    width: 776px;
+}
+.about_header{
+    font-size: 30px;
+    line-height: 48px;
+    /* or 160% */
+
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.9);
+}
+.about_content{
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+
+    color: rgba(0, 0, 0, 0.9);
+
+}
+
+
+
+@media (max-width: 950px) {
+    .about_wrapper{
+        padding-top: 49%;
+        min-width: 375px;
+    }
+    .about_img_wrapper{
+        height: 439px;
+    }
+    .text_wrapper{
+        width: 75.6%;
+    }
+    .about_header{
+        font-size: 26px;
+        line-height: 46px;
+        /* or 177% */
+        width: 95%;
+        margin: 0 20px;
+        letter-spacing: 0.025em;
+    }
+    .about_content{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 95%;
+        height: auto;
+
+        /* Tablet_body_raznaya_zemlya */
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal; display: block;
+-webkit-font-smoothing: antialiased;
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+}
+
+@media (max-width: 460px) {
+    .about_wrapper{
+        padding-top: 257px;
+        min-width: 375px;
+
+    }
+    .about_img_wrapper{
+        height: 300px;
+
+    }
+
+    .text_wrapper{
+        position: relative;
+        z-index: 20;
+        margin: 0 auto;
+        width: 334px;
+    }
+    .about_header{
+        font-size: 22px;
+        line-height: 36px;
+        /* or 177% */
+
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .about_content{
+        margin-top: 25px;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: auto;
+
+    }
+}

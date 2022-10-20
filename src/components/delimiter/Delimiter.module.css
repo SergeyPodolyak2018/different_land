@@ -1,0 +1,21 @@
+.delimiter{
+    width: calc(100% - 61px);
+    height: 150px;
+    margin: 0 auto;
+
+    border-bottom: 2px solid rgba(35, 22, 70, 0.3);
+}
+
+@media (max-width: 950px) {
+    .delimiter{
+        width: calc(100% - 40px);
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .delimiter{
+        height: 80px;
+    }
+}

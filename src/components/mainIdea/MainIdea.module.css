@@ -1,0 +1,137 @@
+.main_idea_wrapper{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.9);
+    padding-top: 108px;
+}
+
+.main_idea_header{
+    position: absolute;
+    height: 121px;
+    top: 200px;
+    margin: 0 auto;
+    font-size: 89px;
+    line-height: 121px;
+    letter-spacing: 0.02em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.main_idea_content{
+    position: absolute;
+    max-width: 100%;
+    top: 321px;
+    width: 1036px;
+    margin: 0 auto;
+    font-size: 44px;
+    line-height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.main_idea_img_wrapper{
+    position: relative;
+    width: 100%;
+    height: 718px;
+    overflow:hidden;
+
+}
+.main_idea_img_wrapper img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    transition: opacity 2s;
+    width: 100%;
+    height: auto;
+}
+
+.img_hiden{
+    opacity: 0;
+}
+
+.img_shown{
+    opacity:1;
+}
+@media (max-width: 1385px) and (min-width: 950px){
+    .main_idea_wrapper{
+        padding-top: 7.5%;
+    }
+
+    .main_idea_img_wrapper{
+        height: 46.9314vw;
+    }
+}
+
+@media (max-width: 950px) {
+    .main_idea_wrapper{
+        padding: 0;
+    }
+    .main_idea_img_wrapper{
+        height: 96vw;
+    }
+    .main_idea_header{
+        height: 10vw;
+        top: 19%;
+        font-size: 7.36vw;
+        line-height: 10vw;
+        letter-spacing: normal;
+
+    }
+    .main_idea_content{
+        top: 30.9%;
+        font-size: 2.7vw;
+        line-height: 4.84vw;
+        letter-spacing: 0.025em;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .main_idea_header{
+        height: 10vw;
+        top: 19%;
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .main_idea_content{
+        top: 32%;
+        font-size: 24px;
+        line-height: 46px;
+        letter-spacing: 0.025em;
+        width: 100%;
+    }
+}
+@media (max-width: 460px) {
+    .main_idea_wrapper{
+        min-width: 375px;
+        padding-top: 245px;
+    }
+    .main_idea_img_wrapper{
+        height: 414px;
+    }
+    .main_idea_img_wrapper img{
+        width: 100%;
+        height: 414px;
+    }
+    .main_idea_header{
+        height: 54px;
+        top: 100px;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: normal;
+
+    }
+    .main_idea_content{
+        top: 169px;
+        height: 36px;
+        width: 334px;
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: 0.025em;
+    }
+}

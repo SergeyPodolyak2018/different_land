@@ -1,0 +1,134 @@
+@import-normalize;
+
+.App {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+  position: relative;
+  padding-top: 60px;
+}
+.swiper-button-prev{
+  width: 52px !important;
+  height: 52px !important;
+  left: 60px !important;
+  background: url("./components/aboutUsArchive/icons/previous_round.svg") center;
+}
+.swiper-button-next{
+  width: 52px !important;
+  height: 52px !important;
+  right: 60px !important;
+  background: url("./components/aboutUsArchive/icons/next_round.svg") center;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+  display: none;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1385px) and (min-width: 1197px){
+  .swiper-button-prev{
+    left: 15px !important;
+  }
+  .swiper-button-next{
+    right: 15px !important;
+  }
+}
+
+@media (max-width: 1196px) and (min-width: 950px){
+  .swiper-button-prev{
+    left: 14% !important;
+  }
+  .swiper-button-next{
+    right: 15% !important;
+  }
+}
+
+@media (max-width: 1155px) {
+  .swiper-button-prev{
+    left: 12% !important;
+  }
+}
+
+@media (max-width: 1155px) {
+  .swiper-button-next{
+    right: 12% !important;
+  }
+}
+
+@media (max-width: 1154px) and (min-width: 1110px){
+  .swiper-button-next{
+    right: 14% !important;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px){
+  .swiper-button-next{
+    right: 10% !important;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 733px){
+  .swiper-button-next{
+    right: 24% !important;
+  }
+  .swiper-button-prev{
+    left: 24% !important;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 732px) {
+  .swiper-button-prev{
+    left: 16% !important;
+  }
+  .swiper-button-next{
+    right: 15% !important;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 682px) {
+
+  .swiper-button-next{
+    right: 12% !important;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 479px) {
+
+  .swiper-button-prev{
+    left: 12% !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .App {
+    padding-top: 63px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    width: 32px !important;
+    height: 32px !important;
+    background-size: cover;
+  }
+
+  .swiper-button-prev{
+    left: 12% !important;
+  }
+  .swiper-button-next{
+    right: 12% !important;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 459px) {
+  .swiper-button-prev{
+    left: 15% !important;
+  }
+  .swiper-button-next{
+    right: 15% !important;
+  }
+}

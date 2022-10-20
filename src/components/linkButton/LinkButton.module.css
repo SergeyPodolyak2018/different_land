@@ -1,0 +1,89 @@
+.linkWrapper{
+    display: flex;
+}
+.linkWrapper:hover .arrow{
+    display: block;
+}
+.arrow{
+    display: none;
+    width: 51px;
+    height: 16px;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+.linkWrapper a{
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #566C91;
+    text-decoration: none;
+    position: relative;
+
+
+}
+.linkWrapper a:after{
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: -10px;
+    width: 100%;
+
+    background: #566C91;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    content: '';
+}
+
+@media (max-width: 950px) {
+    .linkWrapper:hover .arrow{
+        display: none;
+    }
+    .linkWrapper a{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .linkWrapper a:after{
+        position: absolute;
+        height: 2px;
+        left: 0px;
+        bottom: -10px;
+        width: 100%;
+
+        /* raznaya_zzemlya_main */
+
+        background: #566C91;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        content: '';
+    }
+}
+
+@media (max-width: 460px) {
+    .linkWrapper:hover .arrow{
+        display: none;
+    }
+    .linkWrapper a{
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+
+        color: #566C91;
+
+        text-decoration: none;
+
+        position: relative;
+        text-transform: uppercase;
+
+
+
+    }
+    .linkWrapper a:after{
+        position: absolute;
+        height: 2px;
+        left: 0px;
+        bottom: -10px;
+        width: 100%;
+
+        background: #566C91;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        content: '';
+    }
+}

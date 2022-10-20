@@ -1,0 +1,93 @@
+.wrapper_big_picture{}
+
+.big_picture{
+    width: 776px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    transition: opacity 0.8s
+}
+
+.slider_wrapper{
+    width: 776px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.slider_container{
+    padding-top: 100px;
+    padding-right: 60px;
+    position: relative;
+    height: 783px;
+}
+
+.arrows_container{
+    position: absolute;
+    top:100px;
+    right: 60px;
+    width: 240px;
+
+}
+
+.explanation_container{
+    position: absolute;
+    width: 380px;
+    right: 60px;
+    top: 463px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+
+
+}
+.explanation_container_content{
+    float: right;
+    width: 230px;
+    height: 60px;
+    font-style: italic;
+    color: #000000;
+}
+
+.arrows_container_counter{
+    font-weight: 300; display: block;
+-webkit-font-smoothing: antialiased;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.arrows_container_buttons{
+    margin-top: 21px;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_wrapper_small{
+    top:463px;
+    left: -76px;
+    width: 504px;
+    justify-content: space-between;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.small_picture{
+    width: 232px;
+    height: 220px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),#C4C4C4;
+    box-shadow: 4px -3px 18px -5px rgba(0, 0, 0, 0.15);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+

@@ -1,0 +1,487 @@
+// Variables
+
+$black: #666;
+$white: #ffffff;
+$blue: #566C91;
+
+
+$text-arrow-space: 16px;
+$shaft-width: 50px;
+$shaft-thickness: 2px;
+$arrow-head-width: 8px;
+$arrow-head-thickness: $shaft-thickness;
+$animation_duration: .4s;
+
+
+
+
+// The Arrow
+
+.the-arrow {
+  width: $shaft-width;
+
+  @media (max-width:950px) {
+
+    width: 32px;
+
+
+  }
+
+  transition: all $animation_duration;
+
+  &.-left {
+    // height: 100%;
+    position: absolute;
+    bottom: 0;
+    // top: 70%;
+    left: 0;
+
+    @media (max-width:950px) {
+      height: 100%;
+    }
+
+    >.shaft {
+      width: 0;
+      background-color: $blue;
+
+      @media (max-width:950px) {
+        top: 20%;
+      }
+
+      &:before,
+      &:after {
+        width: 0;
+        background-color: $blue;
+      }
+
+      &:before {
+        transform: rotate(0);
+      }
+
+      &:after {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &.-right {
+    top: 3px;
+
+    >.shaft {
+      width: 0;
+      transition-delay: 0.2s;
+
+      &:before,
+      &:after {
+        width: 0;
+        right: 0;
+        transition-delay: 0.3s;
+        transition: all $animation_duration;
+      }
+
+      &:before {
+        transform: rotate(0);
+      }
+
+      &:after {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  >.shaft {
+    background-color: $blue;
+    display: block;
+    height: $shaft-thickness;
+    position: relative;
+    transition: all $animation_duration;
+    transition-delay: 0;
+    will-change: transform;
+
+    &:before,
+    &:after {
+      background-color: $blue;
+      content: '';
+      display: block;
+      height: $arrow-head-thickness;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all $animation_duration;
+      transition-delay: 0;
+    }
+
+    &:before {
+      transform-origin: top right;
+    }
+
+    &:after {
+      transform-origin: bottom right;
+    }
+  }
+}
+
+
+
+// Animated Arrow Button
+
+.animated_arrow {
+  cursor: pointer;
+  display: inline-block;
+  // color: $gray;
+  font-size: 1.25em;
+  // font-style: italic;
+  text-decoration: none;
+  position: relative;
+  transition: all $animation_duration;
+
+
+  &:hover:not(:focus) {
+    color: $blue;
+
+    >.the-arrow.-left {
+      >.shaft {
+        // transform: translateX(-70px);
+
+        width: $shaft-width;
+
+
+
+        @media (max-width: 950px) {
+          width: 34px;
+        }
+
+        // transition-delay: $animation_duration;
+        background-color: $blue;
+
+        &:before,
+        &:after {
+          width: $arrow-head-width;
+
+          // transition-delay: 0.1s;
+          background-color: $blue;
+        }
+
+        &:before {
+          transform: rotate(40deg);
+        }
+
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+
+
+  }
+  @media (max-width:950px){
+
+ 
+  .main::before{
+    width: 0px;
+    transition: width ease-in-out $animation_duration;
+  }
+}
+  &:focus {
+
+    >.the-arrow.-left>.shaft {
+
+      @media (max-width: 950px) {
+        transition-duration: $animation_duration;
+        animation-name: ShaftMobile;
+        width: 32px;
+
+
+        &:before {
+          width: 8px;
+          transform: rotate(40deg);
+        }
+
+        &:after {
+          width: 8px;
+          transform: rotate(-40deg);
+        }
+      }
+
+    }
+
+    .main {
+      
+    transition: transform ease-in-out $animation_duration;
+
+      transform: translateX(0px);
+      animation-duration: $animation_duration;
+
+      @media (max-width:950px) {
+
+        .text::before{
+          animation-duration: $animation_duration;
+          animation-name: shrinkUnderline;
+          // background-color: red;
+        }
+        animation-duration: $animation_duration;
+
+        animation-name: moveFwd;
+        transform: translateX(45px);
+
+        &::before {
+          content: '';
+          background-color: $blue;
+          position: absolute;
+          transition: width ease-in-out $animation_duration;
+          
+          width: 100%;
+          height: 2px;
+          // left: -43px;
+       right: 43px;
+
+          // right: 0;
+          bottom: -10px;
+          animation-duration: $animation_duration;
+
+          animation-name: moveFwdUnd;
+        }
+
+      }
+
+
+      // animation-name: moveBack;  
+
+      >.the-arrow.-right {
+        >.shaft {
+          transition-delay: 0;
+          animation-duration: $animation_duration;
+          animation-name: dissapearShaft;
+
+          @media (max-width: 950px) {
+            animation-name: none;
+          }
+
+
+
+
+
+          &:before,
+          &:after {
+            //  width: $arrow-head-width;
+            transition-delay: 0;
+            transition: all $animation_duration;
+
+            animation-duration: $animation_duration;
+            animation-name: dissapearArrows;
+
+            @media (max-width: 950px) {
+              animation-name: none;
+            }
+          }
+
+          &:before {
+            transform: rotate(45deg);
+          }
+
+          &:after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @keyframes dissapearShaft {
+    from {
+      width: 0;
+    }
+
+
+    to {
+
+      width: $shaft-width;
+    }
+  }
+
+  @keyframes ShaftMobile {
+    from {
+      width: 0;
+    }
+
+
+    to {
+
+      width: 32px;
+
+
+
+    }
+  }
+
+ 
+
+  @keyframes moveBack {
+    from {
+      transform: translateX($shaft-width);
+    }
+
+
+    to {
+
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveFwdUnd {
+    from {
+      // transform: translateX(0);
+      width: 0;
+      // right: 43px;
+       
+    }
+
+
+    to {
+
+      // right: 0px;
+      // transform: translateX(32px);
+      width: 100%;
+      
+    }
+  }
+  @keyframes shrinkUnderline {
+    from {
+      // transform: translateX(0);
+      
+      // right: 43px;
+        width: 100%;
+    }
+
+
+    to {
+
+      // right: 0px;
+      // transform: translateX(32px);
+     width: 0px;
+      
+    }
+  }
+  @keyframes moveFwd {
+    from {
+      transform: translateX(0);
+    }
+
+
+    to {
+
+
+      transform: translateX(45px);
+    }
+  }
+  @keyframes dissapearArrows {
+    from {
+      width: 0;
+    }
+
+    to {
+
+      width: $arrow-head-width;
+
+    }
+  }
+
+  @keyframes appearArrowsMobile {
+    from {
+      width: 0;
+    }
+
+
+    to {
+
+      width: 8px;
+
+
+
+    }
+  }
+
+  >.main {
+
+
+
+    display: flex;
+    align-items: center;
+    transition: all $animation_duration;
+
+    >.text {
+      text-transform: uppercase;
+      color: $blue;
+      margin: 0 $text-arrow-space 0 0;
+      line-height: 1;
+
+      width: max-content;
+
+      position: relative;
+
+      &::before {
+
+        content: '';
+        background-color: $blue;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -10px;
+
+      }
+
+
+    }
+
+
+    >.the-arrow {
+      position: relative;
+    }
+
+  }
+
+  &:hover:not(:focus) {
+    >.main {
+
+      transform: translateX(61px);
+    }
+  }
+}
+
+@media (max-width:950px) {
+  .animated_arrow:focus>.main>.text::before {
+
+     width: 0px;
+
+  }
+}
+
+
+
+
+.animated_arrow.white {
+    color: $white;
+    >.the-arrow {
+      >.shaft {
+        background-color: $white;
+        &:before,
+        &:after {
+          background-color: $white;
+        }
+      }
+    }
+    >.main {
+      >.text {
+        color: $white;
+        &::before {
+          background-color: $white;
+        }
+      }
+      &::before {
+        background-color: $white;
+      }
+    }
+  }

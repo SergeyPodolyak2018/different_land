@@ -1,0 +1,215 @@
+.wrapper{
+    width: 504px;
+    overflow: auto;
+    position: relative;
+}
+.text_wrapper{
+    width: 100%;
+    float: left;
+    margin-top: 406px;
+}
+.header_wrapper{
+    width: auto;
+    padding: 130px 0px 40px;
+    padding-left: 80px;
+    background: #566C91;
+}
+.date{
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.header{
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+    width: calc(100% - 160px);
+}
+.place{
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.body{
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 40px;
+}
+.link_button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.link_button a{
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #566C91;
+    text-decoration: none;
+    position: relative;
+}
+.img_wrapper{
+    width: 349px;
+    position: absolute;
+    top:0px;
+    left: 80px;
+    height: 500px;
+    z-index: 20;
+}
+.img_wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1385px) and (min-width: 950px){
+    .header_wrapper {
+        height: 370px;
+    }
+    .body {
+        width: 400px;
+        height: 460px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .wrapper{
+        width: 538px;
+        overflow: auto;
+        position: relative;
+    }
+    .text_wrapper{
+        width: 100%;
+        float: left;
+        margin-top: 283px;
+    }
+    .header_wrapper{
+        width: auto;
+        padding: 40px 0;
+        padding-left: 20px;
+        background: #566C91;
+    }
+    .date{
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .header{
+        font-size: 26px;
+        line-height: 46px;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin-top: 20px;
+        width: calc(100% - 40px);
+        white-space: pre-line;
+    }
+    .place{
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    .body{
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-top: 40px;
+    }
+    .link_button{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .img_wrapper{
+        width: 409px;
+        position: absolute;
+        top:0px;
+        left: 65px;
+        height: 312px;
+        z-index: 20;
+    }
+    .img_wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper{
+        width: 375px;
+        overflow: auto;
+        position: relative;
+    }
+    .text_wrapper{
+        width: 375px;
+        float: left;
+        margin-top: 232px;
+    }
+    .header_wrapper{
+        width: 375px;
+        padding: 100px 0px 20px 0px;
+        background: #566C91;
+    }
+    .date{
+        font-size: 17px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-left: 38px;
+    }
+    .header{
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin-top: 15px;
+        white-space: pre-line;
+        width: calc(100% - 76px);
+        margin-left: 38px;
+    }
+    .place{
+        font-size: 17px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-top: 15px;
+        margin-left: 38px;
+    }
+    .body{
+        width: calc(100% - 40px);
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .link_button{
+        display: flex;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .img_wrapper{
+        width: 299px;
+        height: 312px;
+        position: absolute;
+        top:0px;
+        left: 38px;
+        z-index: 20;
+    }
+    .img_wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

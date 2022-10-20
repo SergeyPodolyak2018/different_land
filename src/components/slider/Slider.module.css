@@ -1,0 +1,230 @@
+.slider_wrapper{
+    width: 100%;
+    height: 53px;
+    margin-top: 100px;
+}
+.slider_container{
+    width: calc(100% - 253px);
+    margin-left: auto;
+    margin-right: 57px;
+    height: 100%;
+    border-bottom: 1px solid rgba(35, 22, 70, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links_button{
+    width: 507px;
+    height: 52px;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.links_button :hover{
+    opacity: 0.8;
+}
+.active_linck:after{
+    content: '';
+    background-color: rgba(86, 108, 145, 1);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    transition: transform 0.3s;
+    animation-duration: 0.2s;
+    animation-name: underline;
+
+}
+@keyframes underline {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.links_button a{
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: rgba(86, 108, 145, 0.7);
+    opacity: 0.4;
+    text-decoration: none;
+}
+.active_linck a{
+    opacity: 1;
+    color: rgba(86, 108, 145, 1);
+}
+
+@media (max-width: 1385px) and (min-width: 950px){
+    .slider_container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .slider_wrapper{
+        width: 100%;
+        height: 53px;
+        margin-top: 100px;
+    }
+    .slider_container{
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 100%;
+        border-bottom: 1px solid rgba(35, 22, 70, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .links_button{
+        width: 50%;
+        height: 52px;
+        font-size: 30px;
+        line-height: 41px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+
+
+
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .active_linck:after{
+        content: '';
+        background-color: rgba(86, 108, 145, 1);
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -2px;
+        transition: transform 0.3s;
+        animation-duration: 0.2s;
+        animation-name: underline;
+
+    }
+    @keyframes underline {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .links_button a{
+        font-size: 30px;
+        line-height: 41px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: rgba(86, 108, 145, 0.7);
+
+        opacity: 0.4;
+        text-decoration: none;
+    }
+    .active_linck a{
+        opacity: 1;
+        color:  rgba(86, 108, 145, 1);
+    }
+}
+@media (max-width: 552px) {
+    .slider_wrapper{
+        width: 100%;
+        height: 47px;
+        margin-top: 30px;
+        min-width: 375px;
+    }
+    .slider_container{
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 100%;
+        border-bottom: 1px solid rgba(86, 108, 145, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .links_button{
+        width: 50%;
+        height: 36px;
+        font-size: 21px;
+        line-height: 36px;
+        /* identical to box height, or 171% */
+
+        text-transform: uppercase;
+
+        /* raznaya_zzemlya_main */
+
+        color: #566C91;
+
+        opacity: 1;
+
+
+
+
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .active_linck:after{
+        content: '';
+        background-color: #566C91;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -6px;
+        transition: transform 0.3s;
+        animation-duration: 0.2s;
+        animation-name: underline;
+
+    }
+    @keyframes underline {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .links_button a{
+        font-size: 21px;
+        line-height: 36px;
+        /* identical to box height, or 171% */
+
+        text-transform: uppercase;
+
+        /* raznaya_zzemlya_main */
+
+        color: #566C91;
+
+        opacity: 0.4;
+        text-decoration: none;
+    }
+    .active_linck a{
+        opacity: 1;
+        color: #566C91;
+    }
+}

@@ -1,0 +1,63 @@
+.wrapper{
+
+    display: flex;
+
+    justify-content: space-between;
+    padding: 150px 60px;
+    animation: startAnime 1.5s, startAnimeOpacity 1s;
+}
+@keyframes startAnimeOpacity {
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+    }
+}
+@keyframes startAnime {
+    from {
+
+        margin-top: 150px;
+
+    }
+
+    to {
+
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1134px) {
+    .wrapper{
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        padding: 100px 0px 120px 0;
+
+    }
+    .delimeter{
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 460px) {
+    .wrapper{
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        padding: 80px 0px;
+    }
+    .delimeter{
+        width: 100%;
+        height: 60px;
+    }
+}

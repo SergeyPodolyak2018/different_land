@@ -1,0 +1,192 @@
+.share_wrapper{
+    width: 48px;
+    height: auto;
+
+    background: rgba(196, 196, 196, 0.5);
+    mix-blend-mode: normal;
+    position: fixed;
+    /*left: 90%;*/
+    top: 276px;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.close_button{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    background-position: center;
+
+}
+.close_button:hover,
+.close_button:focus {
+    filter:invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+}
+.main_button{
+    width: 36px;
+    height: 36px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.main_button_open{
+    width: 36px;
+    height: 36px;
+    margin-top: 8px;
+}
+.main_button:hover{
+    filter:invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+}
+
+.main_button_open:hover{
+    filter:invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+}
+
+.share_button_wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 36px;
+    height: 180px;
+    margin-top: 27.5px;
+    padding-bottom: 20.75px;
+}
+.button{
+    width: 36px;
+    height: 36px;
+}
+
+.button:hover{
+    filter:invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+}
+@media (max-width: 950px) {
+    .share_wrapper{
+        width: auto;
+        height: 48px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 7px;
+        padding-right: 7px;
+
+
+        background: rgba(196, 196, 196, 0.5);
+        mix-blend-mode: normal;
+        position: fixed;
+        /*left: 90%;*/
+        top: 110px;
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+
+    }
+
+    .main_button{
+        width: 34px;
+        height: 34px;
+        margin-top: 0px;
+        background-size: cover;
+        margin-bottom: 0px;
+
+    }
+    .main_button_open{
+        width: 34px;
+        height: 34px;
+        margin-right: 24px;
+        background-size: cover;
+        margin-top: 0px;
+    }
+    .share_button_wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 246px;
+        height: 34px;
+        margin-right: 37.5px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+
+    }
+    .button{
+        width: 34px;
+        height: 34px;
+        background-size: cover;
+    }
+    .share_text{
+        width: 123px;
+        height: 25px;
+
+        font-weight: 600; display: block;
+-webkit-font-smoothing: antialiased;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #000000;
+        margin-left: 20px;
+        margin-right: 22px;
+    }
+}
+@media (max-width: 460px) {
+    .share_wrapper{
+        width: auto;
+        height: 48px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+
+        background: rgba(196, 196, 196, 0.5);
+        mix-blend-mode: normal;
+        position: fixed;
+        /*left: 90%;*/
+        top: 549px;
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .main_button{
+        width: 24px;
+        height: 24px;
+        margin-top: 0px;
+
+    }
+    .main_button_open{
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+        background-size: cover;
+        margin-top: 0px;
+    }
+    .share_button_wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 170px;
+        height: 24px;
+        margin-right: 29px;
+        margin-left: 32px;
+        margin-top: 0px;
+    }
+    .button{
+        width: 24px;
+        height: 24px;
+    }
+
+}

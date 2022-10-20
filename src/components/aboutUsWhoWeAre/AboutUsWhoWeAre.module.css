@@ -1,0 +1,260 @@
+.about_wrapper{
+    position: relative;
+    height: 440px;
+    margin-top: 150px;
+    animation: startAnime 1.5s, startAnimeOpacity 1s;
+}
+@keyframes startAnimeOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes startAnime {
+    from {
+        margin-top: 300px;
+    }
+
+    to {
+        margin-top: 150px;
+    }
+}
+.about_wrapper:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 250px;
+    background: #566C91;
+    bottom: 0;
+    z-index: 10;
+}
+.about_img_wrapper{
+    position: absolute;
+    right: 60px;
+    top: 0;
+    height: 384px;
+    width: 638px;
+    z-index: 20;
+}
+
+.about_image{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+}
+.text_wrapper{
+    position: relative;
+    z-index: 30;
+    width: 640px;
+    margin-left: 60px;
+    margin-right: auto;
+}
+.about_header{
+    font-size: 30px;
+    line-height: 48px;
+    /* or 160% */
+
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.9);
+
+}
+.about_content{
+    font-size: 30px;
+    line-height: 48px;
+    /* or 160% */
+
+    text-transform: uppercase;
+
+    color: #fff;
+
+}
+
+@media (max-width: 1385px) and (min-width: 950px){
+    .text_wrapper{
+        z-index: 30;
+        background-color: rgba(255, 255, 255, 0.36);
+        padding-left: 20px;
+        margin-left: 0;
+    }
+    .about_img_wrapper{
+        right: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .about_wrapper{
+        height: 929px;
+        margin-top: 80px;
+    }
+    .about_wrapper:after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 208px;
+        background: #566C91;
+        top: 0;
+        z-index: 10;
+    }
+    .about_img_wrapper{
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        top: initial;
+        bottom: 0;
+        height: 600px;
+        z-index: 20;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .about_image{
+        object-fit: cover;
+
+        height: auto;
+        width: 768px;
+        height: 600px;
+
+    }
+    .text_wrapper{
+        position: relative;
+        z-index: 30;
+        width: 71%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+
+    }
+    .about_header{
+        min-height: 200px;
+        font-size: 26px;
+        line-height: 46px;
+        /* or 177% */
+
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+
+    }
+    .about_content{
+        min-height: 200px;
+        font-size: 26px;
+        line-height: 46px;
+        /* or 160% */
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+
+
+
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+}
+
+@media (max-width: 769px) {
+    .about_wrapper:after{
+        height: 250px;
+    }
+}
+
+@media (max-width: 675px) {
+    .about_wrapper:after{
+        height: 298px;
+    }
+}
+@media (max-width: 562px) {
+    .about_wrapper:after{
+        height: 239px;
+    }
+    .about_content{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .about_header{
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 474px) {
+    .about_wrapper:after{
+        height: 270px;
+    }
+}
+
+@media (max-width: 460px) {
+    .about_wrapper{
+        height: 909px;
+        margin-top: 80px;
+        min-width: 375px;
+
+    }
+    .about_wrapper:after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 205px;
+        background: #566C91;
+        top: 0;
+        z-index: 10;
+    }
+    .about_img_wrapper{
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        top: initial;
+        bottom: 0;
+        height: 556px;
+        z-index: 20;
+        overflow: hidden;
+    }
+
+    .about_image{
+
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+
+    }
+    .text_wrapper{
+        position: relative;
+        z-index: 30;
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+
+    }
+    .about_header{
+        font-size: 22px;
+        line-height: 36px;
+        white-space: pre-line;
+        /* or 177% */
+
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+
+    }
+    .about_content{
+        font-size: 22px;
+        line-height: 36px;
+        /* or 177% */
+
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+
+
+
+
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+}
